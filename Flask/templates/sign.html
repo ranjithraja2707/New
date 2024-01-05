@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: linear-gradient(45deg, #ff0000, #ff9900, #ffff00, #33cc33, #3399ff, #9933cc);
+            background-size: 600% 600%;
+            animation: rainbowBackground 10s linear infinite;
+        }
+
+        @keyframes rainbowBackground {
+            0% {
+                background-position: 0% 0%;
+            }
+            100% {
+                background-position: 100% 100%;
+            }
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            animation: bounce 1s ease infinite alternate;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-10px);
+            }
+        }
+
+        section {
+            padding: 2em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        label {
+            font-size: 18px;
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            text-align: left;
+            width: 100%;
+        }
+
+        input {
+            padding: 8px;
+            font-size: 14px;
+            margin-bottom: 16px;
+            width: 100%;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 8px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sign up Page</h1>
+    </header>
+
+    <section>
+        <form action="/" method="POST" onsubmit="vijay()">
+            <input type="text" id="name" name="enter" placeholder="Enter your username">
+            <input type="password" id="password" name="pass1" placeholder="Set your password">
+            <a href="/home"><button type="submit" name="vijay">Submit</button></a>
+        </form>
+    </section>
+
+    <script>
+        function vijay() {
+            alert("Got up!");
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Home Page</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: linear-gradient(45deg, #ff0000, #ff9900, #ffff00, #33cc33, #3399ff, #9933cc);
+            background-size: 600% 600%;
+            animation: rainbowBackground 10s linear infinite;
+        }
+
+        @keyframes rainbowBackground {
+            0% {
+                background-position: 0% 0%;
+            }
+            100% {
+                background-position: 100% 100%;
+            }
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            animation: bounce 1s ease infinite alternate;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-10px);
+            }
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Happy to see you 😊</h1>
+    </header>
+
+    <section>
+        <p>Welcome to our classic home page. Click the button below to get in!</p>
+        <a href="/login" ><button type="submit">Get In</button></a>
+    </section>
+
+    <script>
+        function redirectToLoginPage() {
+            // Add your redirection logic here
+            alert("Redirecting to the login page...");
+        }
+    </script>
+
+</body>
+</html>
